@@ -17,7 +17,7 @@ import sys,socket,select
 title="UDP Communicator v1 - Written by kmmankad (http://kmmankad.blogspot.com)\n\nThis program is licensed CC-BY-SA 3.0\n\n"
 welcomemsg=title+"Press Enter on a blank line,or Ctrl-C to exit.\n\n"
 usagemsg=title+"Usage - PyUDPComm <TargetIP> <TargetPort>\nExample - PyUDPComm 192.168.1.153 1200\n"
-exitmsg="\nUDP Communicator v1.0 Exited.\n"
+exitmsg="\nUDP Communicator v1.0 exited.\n"
 
 #If we dont have enough arguments,
 if len(sys.argv)!=3:
@@ -53,6 +53,5 @@ try:
             print "\t\t <= \" ",reply,"\"\n---------------------------------------\n"
 except KeyboardInterrupt:
     sys.exit(exitmsg) #Exit on Ctrl-C
-except:
-    sys.exit("ERROR! "+exitmsg)#Exit on any error.
+
  
